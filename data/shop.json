@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "vendor_code": "XF001",
+        "title": "Постер 'I Want To Believe'",
+        "description": "Культовый плакат из кабинета Малдера. Размер 60x90см.",
+        "price": 600,
+        "img": "./images/poster.webp"
+    },
+    {
+        "id": 2,
+        "vendor_code": "XF002",
+        "title": "3D стикеры",
+        "description": "Крутые стикеры для чехла на телефон",
+        "price": 350,
+        "img": "./images/stickers.webp"
+    },
+    {
+        "id": 3,
+        "vendor_code": "XF003",
+        "title": "Футболка 'X-files'",
+        "description": "Хлопковая футболка в размерах XS - 6XL.",
+        "price": 1000,
+        "img": "./images/tshirt.webp"
+    },
+    {
+        "id": 4,
+        "vendor_code": "XF004",
+        "title": "Акриловая фигурка Малдер и Скалли",
+        "description": "Фигурка из акрила с персонажами из 'Секретных материалов'",
+        "price": 400,
+        "img": "./images/mulder_scully.webp"
+    },
+    {
+        "id": 5,
+        "vendor_code": "XF005",
+        "title": "Акриловая фигурка Скиннера",
+        "description": "Фигурка из акрила с персонажем из 'Секретных материалов'",
+        "price": 300,
+        "img": "./images/scinner.webp"
+    },
+    {
+        "id": 6,
+        "vendor_code": "XF006",
+        "title": "Акриловая фигурка Курильщика",
+        "description": "Фигурка из акрила с персонажем из 'Секретных материалов'",
+        "price": 300,
+        "img": "./images/smoker.webp"
+    }
+]
