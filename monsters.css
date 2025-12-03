@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(14, 40, 61);
+    color: #fff;
+    font-size: 18px;
+}
+
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(195, 207, 223, 0.2);
+}
+
+.header-content {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: rgb(195, 207, 223);
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav ul li.active a {
+    color: rgb(195, 207, 223);
+    border-bottom: 3px solid rgb(195, 207, 223);
+}
+
+.main-content {
+    padding: 40px 5% 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.table-wrapper {
+    background-image: url('ufo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.monsters-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.monsters-table tr {
+    border-bottom: 2px solid rgba(195, 207, 223, 0.3);
+}
+
+.monsters-table tr:last-child {
+    border-bottom: none;
+}
+
+.monsters-table td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+.image_cell {
+    width: 40%;
+    text-align: center;
+}
+
+.text_cell {
+    width: 60%;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.monsters-table img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.monster-link {
+    display: block;
+    color: #000;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.monster-link:hover {
+    color: rgb(14, 40, 61);
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .monsters-table img {
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .text_cell {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .monsters-table {
+        display: block;
+    }
+
+    .monsters-table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgba(195, 207, 223, 0.5);
+    }
+
+    .image_cell,
+    .text_cell {
+        width: 100% !important;
+        padding: 15px !important;
+    }
+
+    .image_cell {
+        text-align: center;
+        padding-bottom: 10px !important;
+    }
+
+    .monsters-table img {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .main-content {
+        padding: 30px 4% 60px;
+    }
+
+    .table-wrapper {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .monster-link {
+        font-size: 18px;
+    }
+
+    .text_cell {
+        font-size: 16px;
+    }
+
+    .monsters-table td {
+        padding: 15px;
+    }
+
+    .table-wrapper {
+        padding: 10px;
+    }
+}

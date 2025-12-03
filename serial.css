@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(14, 40, 61);
+    color: #fff;
+    font-size: 18px;
+}
+
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(195, 207, 223, 0.2);
+}
+
+.header-content {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: rgb(195, 207, 223);
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+nav ul li.active a {
+    color: rgb(195, 207, 223);
+    border-bottom: 3px solid rgb(195, 207, 223);
+}
+
+.main-content {
+    padding: 40px 5% 80px;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(195, 207, 223);
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: rgb(195, 207, 223);
+    margin: 40px 0 20px;
+}
+
+h4 {
+    color: rgb(195, 207, 223);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.intro-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+
+.intro-section p {
+    flex: 1;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.intro-section img {
+    width: 260px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.page-nav {
+    background-color: rgba(195, 207, 223, 0.1);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.page-nav a {
+    color: rgb(195, 207, 223);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.page-nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.seasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.seasons-list span {
+    background: rgba(195, 207, 223, 0.1);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.seasons-group {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.season {
+    flex: 1;
+}
+
+.season ol {
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+.season li {
+    margin-bottom: 8px;
+}
+
+.to-top {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.to-top a {
+    color: rgb(195, 207, 223);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: rgba(195, 207, 223, 0.1);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.to-top a:hover {
+    color: #fff;
+    background: rgba(195, 207, 223, 0.2);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro-section img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .seasons-group {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .main-content {
+        padding: 30px 4% 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .page-nav {
+        padding: 10px;
+    }
+
+    .page-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .seasons-list {
+        gap: 10px;
+    }
+
+    .seasons-list span {
+        padding: 6px 12px;
+        font-size: 15px;
+    }
+
+    .season ol {
+        font-size: 15px;
+    }
+}

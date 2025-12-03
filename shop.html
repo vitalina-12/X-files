@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-files - Магазин</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-content">
+                <span class="logo">X-files</span>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="about_serial.html">О сериале</a></li>
+                        <li><a href="main_characters.html">Главные герои</a></li>
+                        <li><a href="daily_monsters.html">Монстры недели</a></li>
+                        <li class="active"><a href="shop.html">Магазин</a></li>
+                        <li><a href="s_networks.html">Наши соцсети</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <h1>Товары по "Секретным материалам"</h1>
+
+            <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <input name="q" type="hidden" value="search">
+                <input name="form_type" type="hidden" value="xfiles_shop">
+
+                <ul class="d-flex flex-row flex-wrap justify-content-center bg-transparent" id="node_for_insert">
+                </ul>
+
+                <div class="text-center">
+                    <input class="btn-submit" type="Submit" value="Добавить в корзину">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>
